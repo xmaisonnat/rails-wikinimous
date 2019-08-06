@@ -1,0 +1,13 @@
+<h1>SHOW</h1>
+
+
+ </p>
+<p> <%= @article.content %> </p>
+
+<%= link_to 'Edit', edit_article_path %>
+<%= link_to "Delete", article_path(@article),
+      method: :delete,
+      data: { confirm: "Are you sure?" } %>
+
+
+<%= link_to 'Back', articles_path %>
